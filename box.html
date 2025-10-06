@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Layout Structure</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.outer-box {
+  width: 600px;
+  height: 500px;
+  border: 2px solid goldenrod;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.header {
+  height: 150px;
+  border: 1px solid blueviolet;
+  margin-bottom: 5px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  gap: 5px;
+}
+
+.left,
+.right {
+  flex: 1;
+  border: 1px solid green;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.center-top,
+.center-bottom {
+  flex: 1;
+  border: 1px solid black;
+}
+
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+    <div class="header"></div>
+    <div class="content">
+      <div class="left"></div>
+      <div class="center">
+        <div class="center-top"></div>
+        <div class="center-bottom"></div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </div>
+</body>
+</html>

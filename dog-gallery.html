@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Gallery</title>
+    <style>
+        body{
+            background: black;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            max-width: 900px;
+            gap: 15px;
+            margin: auto;
+            object-fit: cover;
+            
+        }
+        @media (max-width: 768px) {
+            .gallery {
+            grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px){
+            .gallery{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        img{
+           height: 300px;
+           width: 300px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Dog Gallery</h1>
+    <div class="gallery">
+        <img src="https://cdn.pixabay.com/photo/2016/01/05/17/51/maltese-1123016_1280.jpg" alt="Dog 1"/>
+        <img src="https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_1280.jpg" alt="Dog 2" />
+        <img src="https://cdn.pixabay.com/photo/2025/06/20/10/47/dog-9670619_1280.jpg" alt="Dog 3" />
+        <img src="https://cdn.pixabay.com/photo/2018/05/07/10/49/husky-3380550_1280.jpg" alt="Dog 4" />
+        <img src="https://cdn.pixabay.com/photo/2024/02/26/19/57/dog-8598827_1280.jpg" alt="Dog 5" />
+        <img src="https://cdn.pixabay.com/photo/2023/05/13/19/20/dog-7991199_1280.jpg" alt="Dog 6" />
+        <img src="https://cdn.pixabay.com/photo/2021/07/05/14/07/dog-6389277_1280.jpg" alt="Dog 7" />
+        <img src="https://cdn.pixabay.com/photo/2023/04/19/09/25/dog-7937282_1280.jpg" alt="Dog 8" />
+        <img src="https://cdn.pixabay.com/photo/2017/11/05/18/11/dogs-2921382_1280.jpg" alt="Dog 9" />
+    </div>
+</body>
+</html>
